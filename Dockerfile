@@ -1,15 +1,10 @@
-# Utilise l'image officielle Nginx
-FROM registry.access.redhat.com/ubi8/nginx-118
+FROM nginxinc/nginx-unprivileged
 
-# Supprime la configuration par défaut (optionnel)
-RUN rm -rf /usr/share/nginx/html/*
+RUN mkdir -p /usr/share/nginx/html
 
-# Copie les fichiers de ton projet vers le répertoire web de Nginx
 COPY index.html /usr/share/nginx/html/
-COPY src /usr/share/nginx/html/src
+COPY src /usr/share/nginx/html/src/
 
-# Expose le port 80
-EXPOSE 80
+EXPOSE 8080
 
-# Lance Nginx en mode non-démon
 CMD ["nginx", "-g", "daemon off;"]
