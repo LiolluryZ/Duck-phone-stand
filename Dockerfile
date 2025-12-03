@@ -1,5 +1,5 @@
 # Utilise l'image officielle Nginx
-FROM nginx:alpine
+FROM registry.access.redhat.com/ubi8/nginx-118
 
 # Supprime la configuration par défaut (optionnel)
 RUN rm -rf /usr/share/nginx/html/*
