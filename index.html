@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenika phone stand — L'objet qui fait parler votre expertise</title>
+    <meta
+      name="description"
+      content="Découvrez le processus créatif derrière Zenika phone stand, le support de téléphone inspiré de notre logo canard, conçu comme démonstrateur de notre maîtrise IA et numérique."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <script defer src="src/scripts/main.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/@studio-freight/lenis/dist/lenis.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="noise-overlay" aria-hidden="true"></div>
+    <header class="hero hero--bamboo" id="top">
+      <div class="page-shell">
+        <nav class="nav">
+          <div class="logo">
+            <div class="logo-image">
+              <img src="src/assets/logo.png" alt="Logo Zenika phone stand" width="40" height="40" />
+            </div>
+            <div class="logo-text">
+              <span>Zenika phone stand</span>
+              <small>support téléphone en PLA bois</small>
+            </div>
+          </div>
+          <div class="nav-cta">
+            <a href="#usage" class="ghost-link">Utilisation</a>
+            <a href="#timeline" class="ghost-link">Making-of</a>
+            <a href="#eco" class="ghost-link">Éco-conception</a>
+            <a href="#contact" class="btn primary">Précommander</a>
+          </div>
+        </nav>
+
+        <div class="hero-content">
+          <div class="hero-copy">
+            <p class="tagline">Édition limitée · impression 3D PLA bois</p>
+            <h1>
+              Le support de téléphone<br />
+              qui fait parler la technologie.
+            </h1>
+            <p class="lead">
+              Imaginé comme un petit totem de bureau, le Zenika phone stand est un produit né de la 
+              collaboration de l'humain et de l'IA, modélisé sous Fusion&nbsp;360 puis
+              imprimé en filament PLA bois. 
+              <br/>Un objet simple en apparence, qui a mobilisé compétences et expertises.
+            </p>
+            <ul class="hero-features">
+              <li>Grain de bois réel &amp; toucher doux</li>
+              <li>Imprimé localement en petite série</li>
+              <li>Conçu pour embellir votre espace</li>
+            </ul>
+            <div class="hero-actions">
+              <a href="#timeline" class="btn secondary">Voir les coulisses</a>
+              <a href="#contact" class="btn tertiary">Nous découvrir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-shell">
+        <section class="section section-usage" id="usage">
+          <div class="section-heading">
+            <p class="eyebrow">Au quotidien</p>
+            <h2>Zenika phone stand trouve naturellement sa place sur le bureau.</h2>
+          </div>
+          <div class="usage-grid">
+            <div class="usage-copy">
+              <p>
+                Posé sur un plateau en marbre, un bureau en bois clair ou une table de nuit,
+                Zenika phone stand garde votre téléphone à hauteur de regard, sans voler la vedette
+                au reste de votre espace.
+              </p>
+              <ul class="usage-points">
+                <li>Angle pensé pour lire les notifications et les appels vidéo.</li>
+                <li>Base stable qui n’abîme pas le plateau et laisse passer le câble.</li>
+                <li>Silhouette sculptée qui reste élégante même sans téléphone.</li>
+              </ul>
+            </div>
+            <div class="usage-visual">
+              <div class="placeholder">
+                <img src="src/assets/desk.jpg" alt="Zenika phone stand sur un bureau">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-timeline" id="timeline">
+          <div class="section-heading">
+            <p class="eyebrow">Making-of</p>
+            <h2>De l’idée au support en PLA bois posé sur votre table.</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-track" aria-hidden="true"></div>
+
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Moodboard généré avec l’IA</h3>
+                <p>
+                  On part d’un moodboard créé avec le MCP Canva AI : textures de bambou, marbre clair,
+                  lumière dorée. C’est lui qui dicte les courbes et la scène du produit.
+                </p>
+                <div class="tool-duo">
+                  <span class="tool-label">Moodboard imaginé avec</span>
+                  <div class="tool-logos">
+                    <span class="tool-logo tool-logo--claude">
+                      <img src="src/assets/claude.png" alt="Claude" />
+                    </span>
+                    <span class="tool-featuring">×</span>
+                    <span class="tool-logo tool-logo--canva">
+                      <img src="src/assets/canva.png" alt="Canva MCP" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-media">
+                <div class="placeholder">
+                  <img src="src/assets/moodboard.png" alt="Moodboard généré avec l’IA">
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Modélisation sous Fusion 360</h3>
+                <p>
+                  Le stand est sculpté comme un ruban qui se replie, avec un angle confortable
+                  pour la lecture et un appui stable pour le téléphone. Peut-être encore la seule étape qui
+                  résiste à la créativité de l'IA.
+                </p>
+              </div>
+              <div class="timeline-media">
+                <div class="placeholder">
+                  <img src="src/assets/fusion.png" alt="Modélisation sous Fusion 360">
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Impression 3D en PLA bois</h3>
+                <p>
+                  Chaque pièce est imprimée en PLA bois, légèrement poncée et dépoussiérée.
+                  Le grain apparaît, la teinte se réchauffe, le support prend vie.
+                </p>
+              </div>
+              <div class="timeline-media">
+                <div class="placeholder">
+                  <img src="src/assets/print.jpg" alt="Impression 3D en PLA bois">
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Scène de shooting & packaging</h3>
+                <p>
+                  Valorisation de l'objet : mise en lumière, accessoires naturels, boîte
+                  sobre. Design minimal, épuré et luxueux, imaginé avec l'aide de l'IA.
+                </p>
+                <div class="tool-duo">
+                  <span class="tool-label">Imaginé avec</span>
+                  <div class="tool-logos">
+                    <span class="tool-logo tool-logo--nanobanana">
+                      <img src="src/assets/banana.png" alt="Nano Banana" />
+                    </span>
+                    <span class="tool-featuring">×</span>
+                    <span class="tool-logo tool-logo--gemini">
+                      <img src="src/assets/gemini.png" alt="Google Gemini" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-media">
+                <div class="placeholder">
+                  <img src="src/assets/boite.jpg" alt="Scène de shooting & packaging">
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Création de page produit</h3>
+                <p>
+                  La page sur laquelle vous naviguez a été conçue et développée avec l'aide de Cursor, 
+                  un assistant IA avancé. Le code a été généré en temps réel, montrant comment la technologie 
+                  peut accélérer le développement web tout en maintenant une qualité exceptionnelle.
+                </p>
+                <div class="tool-duo">
+                  <span class="tool-label">Développé avec</span>
+                  <div class="tool-logos">
+                    <span class="tool-logo tool-logo--cursor">
+                      <img src="https://www.cursor.com/favicon.ico" alt="Cursor AI" />
+                    </span>
+                    <span class="tool-featuring">×</span>
+                    <span class="tool-logo tool-logo--github">
+                      <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-media">
+                <div class="placeholder">
+                  <img src="src/assets/cursor.png" alt="Écran du code généré avec Cursor">
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-eco" id="eco">
+          <div class="section-heading">
+            <p class="eyebrow">Matière & impact</p>
+            <h2>Un objet pensé durable, imprimé en PLA bois.</h2>
+          </div>
+
+          <div class="eco-grid">
+            <div class="eco-copy">
+              <p>
+                Le Zenika phone stand est imprimé en filament PLA bois : une base biosourcée issue
+                d’amidon de maïs, chargée en fibres de bois recyclées. 
+                <br/>Résultat&nbsp;:
+                un grain chaleureux, un toucher mat et une empreinte maîtrisée par rapport
+                aux plastiques classiques.
+              </p>
+              <ul class="eco-points">
+                <li>Production en petite série, ajustée au nombre de supports nécessaires.</li>
+                <li>Pièces monomatériau, faciles à trier et à recycler en fin de vie. <br/>PLA bois = PLA biodégradable.</li>
+                <li>Impression locale pour limiter les transports inutiles.</li>
+              </ul>
+            </div>
+
+            <div class="eco-cards">
+              <article class="eco-card">
+                <h3>PLA bois</h3>
+                <p>Filament biosourcé, chargé en particules de bois pour le grain et l’odeur.</p>
+              </article>
+              <article class="eco-card">
+                <h3>Temps juste</h3>
+                <p>On ne produit que les pièces nécessaires, au rythme de vos campagnes.</p>
+              </article>
+              <article class="eco-card">
+                <h3>Atelier proche</h3>
+                <p>Fabrication et assemblage réalisés au plus près de votre équipe.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-cta" id="contact">
+          <div class="cta-inner">
+            <p class="eyebrow">Produit, interface, outil interne, expérience client…</p>
+            <h2>Et si on concevait ensemble votre prochain projet tech augmenté par l’IA&nbsp;?</h2>
+            <p class="cta-text">
+              Zenika phone stand est notre prétexte tangible. Derrière, il y a nos scripts, nos
+              API et nos workflows IA qui orchestrent design, code et fabrication. On
+              applique la même exigence à vos projets logiciels&nbsp;: plateformes,
+              dashboards, outils internes ou expériences clients sur‑mesure.
+            </p>
+            <div class="cta-actions">
+              <a
+                class="btn primary"
+                href="mailto:hello@ducklab.studio?subject=Projet%20tech%20augment%C3%A9%20par%20l%27IA"
+              >
+                Discutons de votre besoin
+              </a>
+              <a class="btn tertiary" href="#top">Remonter au début</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="page-shell">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="logo">
+              <span>Zenika phone stand</span>
+              <small>support téléphone en PLA bois</small>
+            </div>
+            <p class="footer-tagline">
+              Des objets pensés pour durer,<br>imprimés avec soin en France.
+            </p>
+          </div>
+          
+          <nav class="footer-nav">
+            <div class="footer-nav-column">
+              <h4>Navigation</h4>
+              <ul>
+                <li><a href="#top">Accueil</a></li>
+                <li><a href="#usage">Utilisation</a></li>
+                <li><a href="#timeline">Making-of</a></li>
+                <li><a href="#eco">Matière & impact</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-column">
+              <h4>Contact</h4>
+              <ul>
+                <li><a href="mailto:contact@bamboostand.fr">contact@bamboostand.fr</a></li>
+                <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+                <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        
+        <div class="footer-legal">
+          <p>&copy; 2025 Zenika phone stand. Tous droits réservés.</p>
+          <div class="footer-legal-links">
+            <a href="#" target="_blank" rel="noopener">Mentions légales</a>
+            <span>·</span>
+            <a href="#" target="_blank" rel="noopener">CGV</a>
+            <span>·</span>
+            <a href="#" target="_blank" rel="noopener">Politique de confidentialité</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Lightbox pour agrandir les images -->
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img">
+      <div class="lightbox-caption"></div>
+    </div>
+    
+    <script>
+      // Lightbox functionality
+      document.addEventListener('DOMContentLoaded', function() {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.querySelector('.lightbox-caption');
+        const closeBtn = document.querySelector('.lightbox-close');
+        
+        // Ajouter un gestionnaire de clic à toutes les images de la timeline et des sections
+        document.querySelectorAll('.timeline img, .usage-visual img, .section-eco img, .hero-visual img').forEach(img => {
+          // Ne pas ajouter aux logos et icônes
+          if (!img.closest('.tool-logo') && !img.closest('.logo-image')) {
+            img.style.cursor = 'zoom-in';
+            img.addEventListener('click', function() {
+              lightbox.classList.add('active');
+              lightbox.style.display = 'block';
+              lightboxImg.src = this.src;
+              lightboxCaption.textContent = this.alt || '';
+              document.body.style.overflow = 'hidden';
+            });
+          }
+        });
+        
+        // Fermer la lightbox
+        function closeLightbox() {
+          lightbox.classList.remove('active');
+          setTimeout(() => {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+          }, 200);
+        }
+        
+        closeBtn.addEventListener('click', closeLightbox);
+        
+        // Fermer en cliquant en dehors de l'image
+        lightbox.addEventListener('click', function(e) {
+          if (e.target === lightbox) {
+            closeLightbox();
+          }
+        });
+        
+        // Fermer avec la touche Échap
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightbox();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+
+

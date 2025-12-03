@@ -1,0 +1,11 @@
+{
+    "name": "bamboo-stand-landing",
+    "version": "1.0.0",
+    "description": "Landing page Bamboo Stand – support de téléphone en PLA bois",
+    "scripts": {
+      "dev": "live-server --port=5173 --entry-file=index.html ."
+    },
+    "devDependencies": {
+      "live-server": "^1.2.2"
+    }
+  }
