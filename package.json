@@ -1,11 +1,13 @@
 {
-    "name": "bamboo-stand-landing",
+    "name": "duck-stand-landing",
     "version": "1.0.0",
-    "description": "Landing page Bamboo Stand – support de téléphone en PLA bois",
+    "description": "Landing page support de téléphone en PLA Zenika",
     "scripts": {
-      "dev": "live-server --port=5173 --entry-file=index.html ."
+        "dev": "http-server -p 8080 -c-1 .",
+        "to-webp": "node scripts/to-webp.js"
     },
     "devDependencies": {
-      "live-server": "^1.2.2"
+        "http-server": "^14.1.1",
+        "sharp": "^0.32.6"
     }
-  }
+}

@@ -16,6 +16,7 @@
     />
     <link rel="stylesheet" href="src/styles/main.css" />
     <script defer src="src/scripts/main.js"></script>
+    <script defer src="src/scripts/ui.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
@@ -40,7 +41,7 @@
         <nav class="nav">
           <div class="logo">
             <div class="logo-image">
-              <img src="src/assets/logo.png" alt="Logo Zenika phone stand" width="40" height="40" />
+              <img src="src/assets/logo.webp" alt="Logo Zenika phone stand" width="40" height="40" />
             </div>
             <div class="logo-text">
               <span>Zenika phone stand</span>
@@ -50,8 +51,8 @@
           <div class="nav-cta">
             <a href="#usage" class="ghost-link">Utilisation</a>
             <a href="#timeline" class="ghost-link">Making-of</a>
-            <a href="#eco" class="ghost-link">Éco-conception</a>
-            <a href="#contact" class="btn primary">Précommander</a>
+            <a href="#fablab" class="ghost-link">Fablab</a>
+            <a href="#contact" class="btn primary">Visiter le fablab</a>
           </div>
         </nav>
 
@@ -63,15 +64,18 @@
               qui fait parler la technologie.
             </h1>
             <p class="lead">
-              Imaginé comme un petit totem de bureau, le Zenika phone stand est un produit né de la 
-              collaboration de l'humain et de l'IA, modélisé sous Fusion&nbsp;360 puis
-              imprimé en filament PLA biodégradable. 
+              Imaginé comme un petit totem de bureau, le Zenika phone stand, plus qu'un goodies, est un
+              challenge que nous avons voulu relevé : <strong>pensé un produit depuis l'idée initiale, à la mise
+              en ligne d'une page commerciale.</strong>
+              Il à été imaginé, avec le concours de l'IA, en quelques jours dans notre Fablab de Rennes.
+              Modélisé sous Fusion&nbsp;360 puis imprimé en filament PLA biodégradable. 
               <br/>Un objet simple en apparence, qui a mobilisé compétences et expertises.
             </p>
             <ul class="hero-features">
-              <li>Grain fin &amp; toucher doux</li>
-              <li>Imprimé localement en petite série</li>
-              <li>Conçu pour embellir votre espace</li>
+                <li>Pensé et imprimé localement en petite série</li>
+                <li>Conçu pour embellir votre bureau</li>
+                <li>Angle optimal pour une bonne visibilité</li>
+                <li>Matière biodégradable et durable</li>
             </ul>
             <div class="hero-actions">
               <a href="#timeline" class="btn secondary">Voir les coulisses</a>
@@ -98,13 +102,13 @@
               </p>
               <ul class="usage-points">
                 <li>Angle pensé pour lire les notifications et les appels vidéo.</li>
-                <li>Base stable qui n’abîme pas le plateau et laisse passer le câble.</li>
+                <li>Base stable qui n’abîme pas le plateau.</li>
                 <li>Silhouette sculptée qui reste élégante même sans téléphone.</li>
               </ul>
             </div>
             <div class="usage-visual">
               <div class="placeholder">
-                <img src="src/assets/desk.jpg" alt="Zenika phone stand sur un bureau">
+                <img src="src/assets/desk.webp" alt="Zenika phone stand sur un bureau">
               </div>
             </div>
           </div>
@@ -113,7 +117,7 @@
         <section class="section section-timeline" id="timeline">
           <div class="section-heading">
             <p class="eyebrow">Making-of</p>
-            <h2>De l’idée au support en PLA posé sur votre table.</h2>
+            <h2>De l’idée à votre bureau.</h2>
           </div>
 
           <div class="timeline">
@@ -122,123 +126,119 @@
             <article class="timeline-item">
               <div class="timeline-dot"></div>
               <div class="timeline-content">
-                <h3>Moodboard généré avec l’IA</h3>
+                <h3>Modélisation sous Fusion 360</h3>
                 <p>
-                  On part d’un moodboard créé avec le MCP Canva AI : textures de bambou, marbre clair,
+                  Le support est sculpté comme un ruban qui se replie, avec un angle confortable
+                  pour la lecture et un appui stable pour le téléphone.
+                  </p><p>
+                  Chaque courbe à été designé avec <strong>Fusion 360</strong>
+                  pour rappeler la silhouette du canard Zenika, tout en restant fonctionnelle.
+                </p>
+              </div>
+              <div class="timeline-media">
+                <div class="placeholder">
+                  <img src="src/assets/fusion.webp" alt="Modélisation sous Fusion 360">
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Impression 3D dans notre Fablab</h3>
+                <p>
+                  Chaque pièce est imprimée à partir de PLA dans nos imprimante 3D.
+                </p><p>
+                  Le PLA est un polymère biodégradable issu de l'amidon de maïs.
+                </p><p>
+                  Il est <strong>100% recyclable et biodégradable</strong>, Ce qui fait de lui l'un des materiaux les
+                  plus massivement utilisés dans l'impression 3D.
+                </p>
+              </div>
+              <div class="timeline-media">
+                <div class="placeholder">
+                  <img src="src/assets/print.webp" alt="Impression 3D en PLA">
+                </div>
+              </div>
+            </article>
+            
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Design du packaging</h3>
+                <p>
+                  Pour valorisé l'objet, nous avons opté pour une mise en scène épurée, 
+                  une boite en apparence simple mais pensée pour mettre en valeur le produit et le protéger.
+                  Comme ce n'est pas notre metier, nous nous aidons de l'IA pour générer des idées de mise en scène.
+                </p>
+                <div class="tool-duo">
+                  <span class="tool-label">Imaginé avec</span>
+                  <div class="tool-logos">
+                    <span class="tool-logo tool-logo--nanobanana">
+                      <img src="src/assets/banana.webp" alt="Nano Banana" />
+                    </span>
+                    <span class="tool-featuring">×</span>
+                    <span class="tool-logo tool-logo--gemini">
+                      <img src="src/assets/gemini.webp" alt="Google Gemini" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-media">
+                <div class="placeholder">
+                  <img src="src/assets/boite.webp" alt="Génération du packaging">
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Découpe automatisé</h3>
+                <p>
+                    Armés des propositions de design générées par l'IA, nous avons créé un modèle vectoriel épuré
+                    que notre découpeuse vinyle du Fablab a transformé en pochoir de précision.
+                    Cet outil nous permet de personnaliser chaque pièce avec élégance, tout en gardant
+                    une finition impeccable et reproductible.
+                </p>
+              </div>
+              <div class="timeline-media">
+                <div class="placeholder">
+                      <img src="src/assets/silhouette.webp" alt="Silhouette cameo 4">
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Moodboard du site</h3>
+                <p>
+                  Pour mettre en valeur ce processus créatif, nous avons décidé de vous offrir 
+                  une expérience visuelle au travers de cette page produit.
+                </p><p>
+                  Pour cela, nous avions besoin d’un univers graphique cohérent. Nous l'avons créer
+                  à partir de l'outils Canva, assisté par l’IA Claude à travers son serveur MCP.
+                </p><p>
+                  En ressort plusieurs idées, dont ce moodboard&nbsp;: textures de bambou, marbre clair,
                   lumière dorée. C’est lui qui dicte les courbes et la scène du produit.
                 </p>
                 <div class="tool-duo">
                   <span class="tool-label">Moodboard imaginé avec</span>
                   <div class="tool-logos">
                     <span class="tool-logo tool-logo--claude">
-                      <img src="src/assets/claude.png" alt="Claude" />
+                      <img src="src/assets/claude.webp" alt="Claude" />
                     </span>
                     <span class="tool-featuring">×</span>
                     <span class="tool-logo tool-logo--canva">
-                      <img src="src/assets/canva.png" alt="Canva MCP" />
+                      <img src="src/assets/canva.webp" alt="Canva MCP" />
                     </span>
                   </div>
                 </div>
               </div>
               <div class="timeline-media">
                 <div class="placeholder">
-                  <img src="src/assets/moodboard.png" alt="Moodboard généré avec l’IA">
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <h3>Modélisation sous Fusion 360</h3>
-                <p>
-                  Le stand est sculpté comme un ruban qui se replie, avec un angle confortable
-                  pour la lecture et un appui stable pour le téléphone. Peut-être encore la seule étape qui
-                  résiste à la créativité de l'IA.
-                </p>
-              </div>
-              <div class="timeline-media">
-                <div class="placeholder">
-                  <img src="src/assets/fusion.png" alt="Modélisation sous Fusion 360">
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <h3>Impression 3D en PLA</h3>
-                <p>
-                  Chaque pièce est imprimée en PLA, légèrement poncée et dépoussiérée.
-                  Le grain apparaît, la teinte se réchauffe, le support prend vie.
-                  Le PLA est un polymère biodégradable issu de l'amidon de maïs.
-                  Il est 100% recyclable et biodégradable.
-                </p>
-              </div>
-              <div class="timeline-media">
-                <div class="placeholder">
-                  <img src="src/assets/print.jpg" alt="Impression 3D en PLA">
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <h3>Scène de shooting & packaging</h3>
-                <p>
-                  Valorisation de l'objet : mise en lumière, accessoires naturels, boîte
-                  sobre. Design minimal, épuré et luxueux, imaginé avec l'aide de l'IA.
-                </p>
-                <div class="tool-duo">
-                  <span class="tool-label">Imaginé avec</span>
-                  <div class="tool-logos">
-                    <span class="tool-logo tool-logo--nanobanana">
-                      <img src="src/assets/banana.png" alt="Nano Banana" />
-                    </span>
-                    <span class="tool-featuring">×</span>
-                    <span class="tool-logo tool-logo--gemini">
-                      <img src="src/assets/gemini.png" alt="Google Gemini" />
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="timeline-media">
-                <div class="placeholder">
-                  <img src="src/assets/boite.jpg" alt="Scène de shooting & packaging">
-                </div>
-              </div>
-            </article>
-
-            <article class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <h3>Génération de votre invitation</h3>
-                <p>
-                  Nous tenions a vous permettre de comprendre comment se produit à été
-                  conçu. Pour ca, il nous fallait un outils de communication élégant.
-                </p>
-                
-                <div class="tool-duo">
-                  <span class="tool-label">Moodboard imaginé avec</span>
-                  <div class="tool-logos">
-                    <span class="tool-logo tool-logo--claude">
-                      <img src="src/assets/claude.png" alt="Claude" />
-                    </span>
-                    <span class="tool-featuring">×</span>
-                    <span class="tool-logo tool-logo--canva">
-                      <img src="src/assets/canva.png" alt="Canva MCP" />
-                    </span>
-                    <span class="tool-featuring">×</span>
-                    <span class="tool-logo tool-logo--nanobanana">
-                      <img src="src/assets/banana.png" alt="Nano Banana" />
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="timeline-media">
-                <div class="placeholder">
-                  <img src="src/assets/card.jpg" alt="Notre carte de visite">
+                  <img src="src/assets/moodboard.webp" alt="Moodboard généré avec l’IA">
                 </div>
               </div>
             </article>
@@ -249,8 +249,8 @@
                 <h3>Création de page produit</h3>
                 <p>
                   La page sur laquelle vous naviguez a été conçue et développée avec l'aide de Cursor, 
-                  un assistant IA avancé. Le code a été généré en temps réel, montrant comment la technologie 
-                  peut accélérer le développement web tout en maintenant une qualité exceptionnelle.
+                  un assistant IA au développement avancé. Le code a été généré en temps réel, montrant comment la technologie 
+                  peut accélérer le développement web sous le contrôle du développeur pour maintenir une qualité exceptionnelle.
                 </p>
                 <div class="tool-duo">
                   <span class="tool-label">Développé avec</span>
@@ -267,70 +267,155 @@
               </div>
               <div class="timeline-media">
                 <div class="placeholder">
-                  <img src="src/assets/cursor.png" alt="Écran du code généré avec Cursor">
+                  <img src="src/assets/cursor.webp" alt="Écran du code généré avec Cursor">
+                </div>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Génération de votre invitation</h3>
+                <p>
+                  Nous tenions a vous permettre de comprendre comment se produit à été
+                  conçu. Pour ca, il nous fallait un outils de communication élégant.
+                </p><p>
+                  Ici encore, nous avons fait appel à l’IA pour imaginer une carte de visite,
+                  celle-ci même qui vous à parmis de découvrir cette page aujourd'hui.
+                </p>
+                
+                <div class="tool-duo">
+                  <span class="tool-label">Imaginé avec</span>
+                  <div class="tool-logos">
+                    <span class="tool-logo tool-logo--claude">
+                      <img src="src/assets/claude.webp" alt="Claude" />
+                    </span>
+                    <span class="tool-featuring">×</span>
+                    <span class="tool-logo tool-logo--canva">
+                      <img src="src/assets/canva.webp" alt="Canva MCP" />
+                    </span>
+                    <span class="tool-featuring">×</span>
+                    <span class="tool-logo tool-logo--nanobanana">
+                      <img src="src/assets/banana.webp" alt="Nano Banana" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-media">
+                <div class="placeholder">
+                  <img src="src/assets/card.webp" alt="Notre carte de visite">
                 </div>
               </div>
             </article>
           </div>
         </section>
 
-        <section class="section section-eco" id="eco">
+        <section class="section section-fablab" id="fablab">
           <div class="section-heading">
-            <p class="eyebrow">Matière & impact</p>
-            <h2>Un objet pensé durable, imprimé en materiaux biodégradables.</h2>
+            <p class="eyebrow">Fablab</p>
+            <h2>Notre atelier — machines et ateliers</h2>
           </div>
 
-          <div class="eco-grid">
-            <div class="eco-copy">
-              <p>
-                Le Zenika phone stand est imprimé en filament PLA : une base biosourcée issue
-                d’amidon de maïs. 
-                <br/>Résultat&nbsp;:
-                un grain chaleureux, un toucher mat et une empreinte maîtrisée par rapport
-                aux plastiques classiques.
-              </p>
-              <ul class="eco-points">
-                <li>Production en petite série, ajustée au nombre de supports nécessaires.</li>
-                <li>Pièces monomatériau, faciles à trier et à recycler en fin de vie.</li>
-                <li>Impression locale pour limiter les transports inutiles.</li>
+          <div class="fablab-intro">
+            <p class="lead">Le Zenika phone stand a été conçu et fabriqué dans notre atelier rennais : un espace équipé pour la conception, le prototypage et la fabrication locale. Ici, développement logiciel et fabrication se répondent — de la CAO aux machines, nous documentons chaque étape.</p>
+          </div>
+
+          <div class="fablab-grid">
+            <article class="fablab-card fablab-card--featured">
+              <div class="fablab-card-media">
+                <img src="src/assets/kobra.webp" alt="Anycubic Kobra S1">
+              </div>
+              <div class="fablab-card-content">
+                <h3>Anycubic Kobra S1</h3>
+                <p class="spec">FDM · 300×300×350 mm · 0.05–0.2 mm</p>
+                <p>Prototypage et petites séries. 1–2 machines en fonctionnement.</p>
+              </div>
+            </article>
+
+            <article class="fablab-card">
+              <div class="fablab-card-media">
+                <img src="src/assets/creality.webp" alt="Creality Ender">
+              </div>
+              <div class="fablab-card-content">
+                <h3>Creality Ender</h3>
+                <p class="spec">FDM · 220×220×250 mm</p>
+                <p>Tests rapides et réglages.</p>
+              </div>
+            </article>
+
+            <article class="fablab-card">
+              <div class="fablab-card-media">
+                <img src="src/assets/silhouette1.webp" alt="Silhouette Cameo 4">
+              </div>
+              <div class="fablab-card-content">
+                <h3>Silhouette Cameo 4</h3>
+                <p class="spec">Découpe numérique</p>
+                <p>Vinyle, gabarits, pochoirs. Mode batch programmé, personnalisations.</p>
+              </div>
+            </article>
+
+            <article class="fablab-card fablab-card--featured">
+              <div class="fablab-card-media">
+                <img src="src/assets/electronique.webp" alt="Station électronique">
+              </div>
+              <div class="fablab-card-content">
+                <h3>Stand électronique & soudure</h3>
+                <p class="spec">Assemblage & intégration</p>
+                <p>Fer à souder, préchauffage, multimètre, outillage. Intégrez électroniques au produit.</p>
+              </div>
+            </article>
+
+            <article class="fablab-card fablab-card--featured">
+              <div class="fablab-card-media">
+                <img src="src/assets/velo.webp" alt="Pied de vélo">
+              </div>
+              <div class="fablab-card-content">
+                <h3>Mobilité douce</h3>
+                <p class="spec">Maintenance & optimisation</p>
+                <p>Tous le necessaire pour réparer ou entretenir nos montures.</p>
+              </div>
+            </article>
+
+            <article class="fablab-card fablab-card--featured">
+              <div class="fablab-card-media">
+                <img src="src/assets/couture.webp" alt="Machine à coudre">
+              </div>
+              <div class="fablab-card-content">
+                <h3>Couture</h3>
+                <p class="spec">Création & réparation</p>
+                <p>machines à coudre et outillage pour prototypage textile et finitions sur‑mesure.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="fablab-content">
+            <div class="fablab-services">
+              <h4>Ateliers</h4>
+              <ul>
+                <li><strong>Ateliers CAO 3D :</strong> Fusion 360, modélisation paramétrique, pièces design ou fonctionnelles</li>
+                <li><strong>Ateliers impression 3D :</strong> réglages machine, identification de problème, post-traitement, optimisation</li>
+                <li><strong>Fabrique ton vélo :</strong> depuis un tas de pièce à un vélo fonctionnel</li>
+                <li><strong>Initiation à la couture :</strong> création ou réparation, la couture fait partie de l'univers du maker</li>
               </ul>
             </div>
 
-            <div class="eco-cards">
-              <article class="eco-card">
-                <h3>PLA</h3>
-                <p>Filament biosourcé, sans odeur, sans composé toxique.</p>
-              </article>
-              <article class="eco-card">
-                <h3>Temps juste</h3>
-                <p>On ne produit que les pièces nécessaires, au rythme de vos campagnes.</p>
-              </article>
-              <article class="eco-card">
-                <h3>Atelier proche</h3>
-                <p>Fabrication et assemblage réalisés au plus près de votre équipe.</p>
-              </article>
+            <div class="fablab-safety-box">
+              <h4>🛡️ Sécurité</h4>
+              <p>Nous sommes attentifs à la sécurité en atelier. Tous les équipements de protection individuelle (lunettes, gants, masques) sont fournis pour tous visiteurs et participants.</p>
             </div>
           </div>
         </section>
 
+
         <section class="section section-cta" id="contact">
           <div class="cta-inner">
-            <p class="eyebrow">Produit, interface, outil interne, expérience client…</p>
-            <h2>Et si on concevait ensemble votre prochain projet tech augmenté par l’IA&nbsp;?</h2>
+            <p class="eyebrow">Visitez le fablab</p>
+            <h2>Découvrez notre atelier — déjeuner, atelier ou démonstration</h2>
             <p class="cta-text">
-              Zenika phone stand est notre prétexte tangible. Derrière, il y a nos scripts, nos
-              API et nos workflows IA qui orchestrent design, code et fabrication. On
-              applique la même exigence à vos projets logiciels&nbsp;: plateformes,
-              dashboards, outils internes ou expériences clients sur‑mesure.
+              Nous invitons nos clients à venir visiter le fablab : une formule conviviale autour d'un déjeuner, un atelier personnalisé (CAO, impression 3D, électronique) ou une démonstration technique. Dites-nous le format souhaité et nous construisons la session ensemble.
             </p>
             <div class="cta-actions">
-              <a
-                class="btn primary"
-                href="mailto:hello@ducklab.studio?subject=Projet%20tech%20augment%C3%A9%20par%20l%27IA"
-              >
-                Discutons de votre besoin
-              </a>
-              <a class="btn tertiary" href="#top">Remonter au début</a>
+              <a class="btn primary" href="mailto:hello@ducklab.studio?subject=Visite%20fablab">Faire une visite ou un atelier</a>
             </div>
           </div>
         </section>
@@ -356,7 +441,7 @@
                 <li><a href="#top">Accueil</a></li>
                 <li><a href="#usage">Utilisation</a></li>
                 <li><a href="#timeline">Making-of</a></li>
-                <li><a href="#eco">Matière & impact</a></li>
+                <li><a href="#fablab">Fablab</a></li>
               </ul>
             </div>
             <div class="footer-nav-column">
@@ -385,61 +470,13 @@
     </footer>
     
     <!-- Lightbox pour agrandir les images -->
-    <div id="lightbox" class="lightbox">
-      <span class="lightbox-close">&times;</span>
-      <img class="lightbox-content" id="lightbox-img">
-      <div class="lightbox-caption"></div>
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="false" aria-hidden="true">
+      <button type="button" class="lightbox-close" aria-label="Fermer la fenêtre">&times;</button>
+      <img class="lightbox-content" id="lightbox-img" alt="" />
+      <div class="lightbox-caption" aria-live="polite"></div>
     </div>
     
-    <script>
-      // Lightbox functionality
-      document.addEventListener('DOMContentLoaded', function() {
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const lightboxCaption = document.querySelector('.lightbox-caption');
-        const closeBtn = document.querySelector('.lightbox-close');
-        
-        // Ajouter un gestionnaire de clic à toutes les images de la timeline et des sections
-        document.querySelectorAll('.timeline img, .usage-visual img, .section-eco img, .hero-visual img').forEach(img => {
-          // Ne pas ajouter aux logos et icônes
-          if (!img.closest('.tool-logo') && !img.closest('.logo-image')) {
-            img.style.cursor = 'zoom-in';
-            img.addEventListener('click', function() {
-              lightbox.classList.add('active');
-              lightbox.style.display = 'block';
-              lightboxImg.src = this.src;
-              lightboxCaption.textContent = this.alt || '';
-              document.body.style.overflow = 'hidden';
-            });
-          }
-        });
-        
-        // Fermer la lightbox
-        function closeLightbox() {
-          lightbox.classList.remove('active');
-          setTimeout(() => {
-            lightbox.style.display = 'none';
-            document.body.style.overflow = 'auto';
-          }, 200);
-        }
-        
-        closeBtn.addEventListener('click', closeLightbox);
-        
-        // Fermer en cliquant en dehors de l'image
-        lightbox.addEventListener('click', function(e) {
-          if (e.target === lightbox) {
-            closeLightbox();
-          }
-        });
-        
-        // Fermer avec la touche Échap
-        document.addEventListener('keydown', function(e) {
-          if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-            closeLightbox();
-          }
-        });
-      });
-    </script>
+    <!-- UI scripts moved to `src/scripts/ui.js` -->
   </body>
 </html>
 
