@@ -14,6 +14,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - uses: actions/setup-node@v3
+      name: Install Node 20
+      with:
+        node-version: '20.14'
+        cache: 'npm'
+    - name: Install dependencies
+      run: npm install
+    - name: Build resources
+      run: npm run to-webp
     - name: Log in to GitHub Container Registry
       uses: docker/login-action@v3
       with:
@@ -25,3 +34,5 @@ jobs:
     - name: Push Docker image
       run: |
         docker push ghcr.io/liolluryz/duck-stand:latest
+
+
