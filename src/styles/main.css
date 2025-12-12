@@ -1126,7 +1126,29 @@
     left: 50%;
     width: 100vw;
     pointer-events: none;
-    background: linear-gradient(135deg, #f0e8dc 0%, #e8dfd3 50%, #f5f1eb 100%);
+    /* Dégradé rouge seul (identique à .hero-copy) */
+    background-image: linear-gradient(135deg, rgba(238, 34, 56, 0.7) 48%, rgba(191, 29, 103, 0.7));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    transform: translateX(-50%);
+  }
+
+  /* Motif séparé pour pouvoir baisser uniquement son opacité */
+  .section-fablab::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100vw;
+    pointer-events: none;
+    background-image: url("../assets/motif_zenika_blanc.svg");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 1080px auto;
+    opacity: 0.18; /* motif plus en transparence */
     z-index: -1;
     transform: translateX(-50%);
   }
@@ -1134,6 +1156,12 @@
   .section-fablab > * {
     position: relative;
     z-index: 1;
+  }
+
+  /* Improve contrast for the FABLAB section label */
+  .section-fablab .section-heading .eyebrow {
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
   }
 
   .fablab-intro {
@@ -1157,20 +1185,21 @@
   }
 
   .fablab-card {
-    background: white;
-    border-radius: 18px;
+    /* Match CTA dark card styling */
+    background: linear-gradient(145deg, rgba(21, 23, 29, 0.95), rgba(17, 18, 26, 0.9));
+    border-radius: 28px;
     overflow: hidden;
-    box-shadow: 0 12px 40px rgba(51, 34, 18, 0.12);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.6);
     transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(200, 147, 75, 0.15);
+    border: 1px solid rgba(238, 34, 56, 0.25);
   }
 
   .fablab-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 24px 60px rgba(51, 34, 18, 0.2);
-    border-color: rgba(200, 147, 75, 0.35);
+    box-shadow: 0 28px 90px rgba(0, 0, 0, 0.7);
+    border-color: rgba(238, 34, 56, 0.4);
   }
 
   .fablab-card-media {
@@ -1178,7 +1207,7 @@
     width: 100%;
     aspect-ratio: 16 / 10;
     overflow: hidden;
-    background: linear-gradient(135deg, #f0e8dc, #e8dfd3);
+    background: linear-gradient(135deg, #0d0e12, #13151b);
   }
 
   .fablab-card-media img {
@@ -1230,16 +1259,20 @@
   }
 
   .fablab-services {
-    background: rgba(255, 255, 255, 0.6);
+    /* Increase contrast against the red background */
+    background: rgba(255, 255, 255, 0.92);
     border-radius: 20px;
     padding: 2rem;
-    border: 1px solid rgba(200, 147, 75, 0.2);
+    border: 1px solid rgba(200, 147, 75, 0.35);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+    backdrop-filter: saturate(140%) blur(6px);
   }
 
   .fablab-services h4 {
     margin: 0 0 1.2rem;
     font-size: 1.15rem;
-    color: var(--fg);
+    /* Ensure readability on the lighter card */
+    color: #1b1e25;
     font-weight: 600;
   }
 
@@ -1254,7 +1287,8 @@
   .fablab-services li {
     padding-left: 2rem;
     position: relative;
-    color: var(--muted);
+    /* Slightly darker text for better legibility */
+    color: #3b404a;
     font-size: 0.95rem;
     line-height: 1.6;
   }
@@ -1269,23 +1303,40 @@
   }
 
   .fablab-safety-box {
-    background: linear-gradient(135deg, rgba(200, 147, 75, 0.12), rgba(215, 168, 110, 0.08));
-    border-radius: 20px;
+    /* Distinct design from .fablab-services: dark glass panel with gold accent */
+    background: linear-gradient(160deg, rgba(16, 18, 24, 0.9), rgba(13, 15, 20, 0.82));
+    border-radius: 22px;
     padding: 2rem;
-    border: 2px solid rgba(200, 147, 75, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(200, 147, 75, 0.22);
+    backdrop-filter: saturate(130%) blur(4px);
     position: relative;
+    overflow: hidden;
+  }
+
+  .fablab-safety-box::before {
+    /* Thin accent bar to anchor the card visually */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, rgba(238, 34, 56, 0.9), rgba(200, 147, 75, 0.95));
+    opacity: 0.95;
+    pointer-events: none;
   }
 
   .fablab-safety-box h4 {
     margin: 0 0 0.8rem;
     font-size: 1.1rem;
-    color: var(--fg);
+    color: #f5f7fb; /* higher contrast on dark panel */
     font-weight: 600;
   }
 
   .fablab-safety-box p {
     margin: 0;
-    color: var(--muted);
+    color: #c9d0dc; /* improve legibility vs red background */
     font-size: 0.95rem;
     line-height: 1.6;
   }
